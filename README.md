@@ -1,4 +1,16 @@
-# Курсовая под защиту: консилиум, MCP Word и QA
+<!-- neon:header:start -->
+<p align="center">
+  <img src="assets/neon-header.svg" alt="Kursach Consilium" width="100%">
+</p>
+<!-- neon:header:end -->
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10%2B-00F5FF?style=for-the-badge&labelColor=0D1117&logo=python&logoColor=00F5FF" alt="Python 3.10+">
+  <img src="https://img.shields.io/badge/Word-docx-00F5FF?style=for-the-badge&labelColor=0D1117&logo=microsoftword&logoColor=00F5FF" alt="Word docx">
+  <img src="https://img.shields.io/badge/MCP-word--live-7A5CFF?style=for-the-badge&labelColor=0D1117" alt="MCP word-live">
+  <img src="https://img.shields.io/badge/GOST-R%207.0.100--2018-FF2BD6?style=for-the-badge&labelColor=0D1117" alt="GOST R 7.0.100-2018">
+  <img src="https://img.shields.io/badge/License-MIT-00F5FF?style=for-the-badge&labelColor=0D1117" alt="MIT">
+</p>
 
 Набор методик и инструментов, чтобы **самостоятельно** довести курсовую или дипломную работу в Word до защиты: проверить по методичке, собрать замечания, внести правки, привести рамки и штампы, проверить библиографию и не потерять вёрстку.
 
@@ -100,6 +112,10 @@ Word управляется через локальный MCP-сервер `word
 ## Что внутри
 
 ```
+assets/
+  neon-header.svg     баннер README
+  neon-footer.svg     футер README
+  social-preview.png  превью 1280×640
 docs/
   01-INSTRUCTION.md   полная инструкция
   02-MCP-SERVER.md    word-live, browse, COM
@@ -127,6 +143,12 @@ scripts/
     update_fields.ps1
 ```
 
+## Оформление
+
+- баннер и футер — `assets/neon-header.svg` и `assets/neon-footer.svg`, уже вставлены в README;
+- social preview 1280×640 — `assets/social-preview.png`;
+- загрузить превью: **Settings → Social preview → Upload image** (GitHub API этого не умеет).
+
 ## Требования
 
 - Windows + Microsoft Word (для COM и `word-live`).
@@ -141,3 +163,9 @@ scripts/
 ## Лицензия
 
 MIT. См. [LICENSE](LICENSE).
+
+<!-- neon:footer:start -->
+<p align="center">
+  <img src="assets/neon-footer.svg" alt="Bugulmek" width="100%">
+</p>
+<!-- neon:footer:end -->

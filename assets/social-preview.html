@@ -1,0 +1,78 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; width: 1280px; height: 640px; overflow: hidden; }
+  body {
+    background: #0D1117;
+    font-family: 'Cascadia Code','JetBrains Mono',Consolas,'Courier New',monospace;
+    color: #E7F2FF;
+    position: relative;
+  }
+  .grid {
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(#1C2B45 1px, transparent 1px),
+      linear-gradient(90deg, #1C2B45 1px, transparent 1px);
+    background-size: 64px 64px;
+    opacity: .30;
+  }
+  .halo {
+    position: absolute; width: 760px; height: 520px; border-radius: 50%;
+    filter: blur(40px);
+    background: radial-gradient(closest-side, #00F5FF33, transparent 70%);
+    left: -180px; top: -120px;
+  }
+  .halo2 {
+    position: absolute; width: 700px; height: 520px; border-radius: 50%;
+    filter: blur(46px);
+    background: radial-gradient(closest-side, #FF2BD633, transparent 70%);
+    right: -200px; bottom: -160px;
+  }
+  .frame {
+    position: absolute; inset: 28px; border: 1px solid #1C2B45; border-radius: 20px;
+  }
+  .corner { position: absolute; width: 56px; height: 56px; }
+  .c1 { top: 28px; left: 28px; border-top: 3px solid #00F5FF; border-left: 3px solid #00F5FF;
+         border-radius: 20px 0 0 0; filter: drop-shadow(0 0 8px #00F5FF); }
+  .c2 { bottom: 28px; right: 28px; border-bottom: 3px solid #FF2BD6; border-right: 3px solid #FF2BD6;
+         border-radius: 0 0 20px 0; filter: drop-shadow(0 0 8px #FF2BD6); }
+  .content { position: absolute; left: 96px; right: 96px; top: 132px; }
+  .label { font-size: 14px; letter-spacing: 8px; color: #7C8DA6; }
+  h1 {
+    margin: 26px 0 0; font-size: 84px; line-height: 1; font-weight: 700;
+    letter-spacing: -1px;
+    text-shadow: 0 0 18px #00F5FF88, 0 0 46px #7A5CFF55, 2px 0 0 #FF2BD655, -2px 0 0 #00F5FF55;
+  }
+  .sub { margin-top: 22px; font-size: 26px; color: #9FB0C7; letter-spacing: .5px; }
+  .tags { margin-top: 38px; display: flex; gap: 12px; }
+  .pill {
+    padding: 10px 18px; border: 1px solid #263A5A; border-radius: 999px;
+    font-size: 16px; color: #00F5FF; background: #0B1120;
+    box-shadow: inset 0 0 18px #00F5FF14;
+  }
+  .foot {
+    position: absolute; left: 96px; right: 96px; bottom: 78px;
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: 17px; color: #7C8DA6; letter-spacing: 1px;
+  }
+  .mark { position: absolute; right: 72px; top: 96px; font-size: 440px; line-height: 1; font-weight: 700; color: #00F5FF; opacity: .055; }
+  .bar { position: absolute; left: 0; right: 0; bottom: 0; height: 3px;
+    background: linear-gradient(90deg, transparent, #00F5FF, #FF2BD6, transparent); opacity: .8; }
+</style></head>
+<body>
+  <div class="grid"></div>
+  <div class="halo"></div>
+  <div class="halo2"></div>
+  <div class="mark">K</div>
+  <div class="frame"></div>
+  <div class="corner c1"></div>
+  <div class="corner c2"></div>
+  <div class="content">
+    <div class="label">// BUGULMEK · TOOLKIT</div>
+    <h1>Kursach Consilium</h1>
+    <div class="sub">Как довести курсовую до защиты</div>
+    <div class="tags"><span class="pill">Word</span><span class="pill">MCP</span><span class="pill">Python</span><span class="pill">ГОСТ</span></div>
+  </div>
+  <div class="foot"><span>github.com/Bugulmekas/kursach-consilium</span><span>BUGULMEK</span></div>
+  <div class="bar"></div>
+</body></html>
